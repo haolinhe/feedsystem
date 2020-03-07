@@ -141,7 +141,7 @@ A_Tube = pi/4*(D_Tube**2);      # Tube area [m2]
 Q_He_Ox = Q_LOx;                 # Volumetric flow of Helium in tank [m3/s]
 v_He_Ox = Q_He_Ox/A_t;          # Helium plane velocity [m/s]
 
-P_0 = 1314.7*psi2pa;            # Helium Pressure in Tank [Pa]
+P_0 = 2200 + 14.7*psi2pa;            # Helium Pressure in Tank [Pa]
 T_0 = 310;                      # Helium Temperature in tank at desert [K]
 
 P_T_LOx = PT_LOx*psi2pa;          # Required Prop Tank Pressure [Pa]
@@ -149,9 +149,9 @@ P_T_LOx = PT_LOx*psi2pa;          # Required Prop Tank Pressure [Pa]
 p_He_Tank = P_0/R_He/T_0/Z_0;   # Density of Helium leaving tank [kg/m3]
 
 N2 = 22.67;     # numerical constant (std ft3/min, psia,R)
-p1 = 1314.7;    # absolute pressure
-p11 = 564.7;    
-p2  = 465+14.7;
+p1 = 2200 + 14.7;    # absolute pressure
+p11 = 540 + 14.7;    
+p2  = 460 + 14.7;
 dp = p11-p2;
 Gg = .138;      # gas specific gravity
 T_R = 558;      # inlet temp Rankine
