@@ -165,3 +165,10 @@ Cv_sonic = (q_ft/(0.471*N2*p1))*sqrt(Gg*T_R);
 q_act_ch4 = Q_CH4*m3s2ft3min;
 q_ft_ch4 = q_act_ch4*(p11*psi2pa/P_Std)*(T_Std/T_0);
 Cv_sub = (q_ft_ch4/(N2*p11*(1-(2*dp/(3*p11)))))*sqrt(Gg*p11*T_R/dp);
+
+print(' ') 
+print('Helium paramters') 
+print('Cv at choked flow',float(Cv_sonic))
+print('Cv at regular operation',float(Cv_sub))
+print('flow rate of helium',float(actual_ft),'ft3/min')
+print('flow rate of helium in SCFM',float(q_ft),'ft3/min')
